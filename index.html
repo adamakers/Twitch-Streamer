@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c1b0f372e8.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- TWITCH STREAMER STATUS CHECKER FCC -->
+
+    <div class="page-wrap">
+    <!-- ========= HEADER ========= -->
+      <header class="main-header">
+        <div class="main-header-wrapper">
+
+          <div class="main-header-title-box">
+            <h1 class="main-header-text"><i class="fa fa-twitch" aria-hidden="true"></i><span>Streamer Status</span></h1>
+          </div><!--/.main-header-title-->
+
+          <div class="search-button-wrapper">
+    <!--         <i class="fa fa-search" aria-hidden="true"></i> -->
+          </div><!--/.search-button-wrapper-->
+
+        </div><!--/.main-header-wrapper-->
+
+        <div class="main-header-search clearfix">
+    <!--       <input type="text" name="search" placeholder="Search stream..."> -->
+        </div><!--/.main-header-search-->
+      </header><!--/.main-header-->
+
+      <!-- ========= VIDEO SECTION ========= -->
+
+      <section class="video-content-container">
+          
+        <div class="video-container">
+          <iframe 
+                  class="player-video"
+                  src="https://player.twitch.tv/?channel={esl_sc2}&muted=true" 
+                  frameborder="0" 
+                  scrolling="no"
+                  allowfullscreen="true"
+                  ></iframe>
+        </div><!--/.video-contanier-->
+
+      </section><!--/.video-content-container -->
+
+      <!-- ========= STREAMERS SECTION ========= -->
+      <header class="streamers-header-container">
+        <h1 class="streamers-header">Featured Streamers</h1>
+      </header> <!--/.streamers-header-container-->
+      
+      <section class="streamers-container">
+        <!--  NAVIGATION FOR STREAMERS  -->
+        <nav class="streamers-nav">
+          <ul class="nav-list">
+            <li><a id="stream-all" class="stream-nav"><i class="fa fa-users" aria-hidden="true"></i>All</a></li>
+            <li><a id="stream-online" class="stream-nav"><i class="fa fa-user" aria-hidden="true"></i>Online</a></li>
+            <li><a id="stream-offline" class="stream-nav"><i class="fa fa-user-times" aria-hidden="true"></i>Offline</a></li>
+          </ul>
+        </nav>
+        
+    <!--   ========= WHERE STREAMERS CARDS ARE INSERTED ========   -->
+        <div class="streamers-content">
+        </div><!--/.streamers-content-->
+        
+        <div class="streamers-error">
+        </div><!--/.streamers-error-->
+
+      </section> <!-- /.streamers-container-->
+    </div><!--/.page-wrap for sticky footer -->
+    <!-- ======= FOOTER ======= -->
+
+    <footer class="main-footer">
+
+      <p>Made by Adam Akers</p>
+
+    </footer>
+
+    <script src="scripts/jquery-3.2.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
